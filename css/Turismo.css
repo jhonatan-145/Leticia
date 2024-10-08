@@ -1,0 +1,190 @@
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total de los elementos */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Define la fuente del cuerpo */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    background-color: #f9f9f9; /* Color de fondo del cuerpo */
+    color: #333; /* Color del texto */
+}
+
+.header {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #16251e9a; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+.turismo-leticia {
+    font-size: 200%; /* Aumenta el tamaño de la fuente */
+    position: relative; /* Posición relativa para elementos dentro */
+
+}
+
+.turismo-leticia h1 {
+
+    margin-top: 2%; /* Espaciado superior */
+}
+
+.descubre {
+    margin-top: -1%; /* Ajuste negativo del margen superior */
+}
+
+.item{
+
+    margin-top: 10%; /* Espacio superior para el item */
+}
+
+header h1 {
+    margin: 0;
+    flex: 1; /* Permitir que el título ocupe el espacio restante */
+    text-align: right; /* Alinear el texto a la derecha */
+}
+
+nav {
+    text-align: left; /* Alinea el contenido del nav a la izquierda */
+}
+
+nav a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina subrayado */
+    margin: 0 15px; /* Espacio horizontal entre enlaces */
+    font-weight: bold; /* Negrita */
+    display: inline-block; /* Permite margen horizontal */
+}
+
+nav a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de los enlaces al pasar el mouse (hover) */
+  }
+
+main {
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: white; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-left: 15%; /* Margen izquierdo */
+    margin-right: 15%; /* Margen derecho */
+}
+
+.Turismo {
+    margin-left: 2%; /* Margen izquierdo */
+    margin-right: 2%; /* Margen derecho */
+    
+}
+
+main h1 {
+    text-align: center; /* Alinear el texto en el centro */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+h2 {
+    color: #59a742; /* Color verde */
+    text-align: center; /* Alinear el texto en el centro */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.grid {
+    display: grid; /* Usar CSS Grid Layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crear columnas responsivas */
+    gap: 20px; /* Espacio entre elementos de la cuadrícula */
+}
+
+.item {
+    background-color: #fff; /* Color de fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.item img {
+    width: 100%; /* Ancho completo de la imagen */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene el aspecto de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.item h3 {
+    margin: 10px 0; /* Margen superior e inferior */
+    color: #333; /* Color del texto */
+    font-size: 1.3em; /* Tamaño de fuente */
+}
+
+.item p {
+    font-size: 1.1em; /* Tamaño de fuente para párrafos */
+    color: #666; /* Color gris */
+}
+
+.contact-container {
+    background-color: white; /* Color de fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 600px; /* Ancho máximo para el formulario */
+    width: 100%; /* Ancho completo */
+    margin: 40px auto; /* Centrando y espacio por encima del footer */
+}
+
+/* Estilos de los campos del formulario */
+form {
+    display: flex; /* Usar Flexbox para el formulario */
+    flex-direction: column; /* Dirección de los elementos en columna */
+}
+
+label {
+    margin-bottom: 5px; /* Margen inferior */
+    font-weight: bold; /* Negrita */
+}
+
+input, textarea {
+    margin-bottom: 15px; /* Margen inferior */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Cambio de color en hover */
+
+}
+
+/* hace que el footer se vaya hacia abajo */
+body {
+    display: flex; /* Usar Flexbox para el cuerpo */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    min-height: 100vh; /* Hace que el contenido mínimo ocupe toda la altura de la ventana */
+
+}
+/* Asegúrate de que el pie de página esté bien posicionado */
+footer {
+    text-align: center; /* Centrar texto */
+    background-color: #112918; /* Color de fondo oscuro */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Asegura que no sea fixed ni absolute */
+    bottom: 0; /* Coloca el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+

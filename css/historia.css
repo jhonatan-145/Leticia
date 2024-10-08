@@ -1,0 +1,183 @@
+body {
+  margin: 0;/* Elimina el margen por defecto del cuerpo de la página */
+  padding: 0;/* Elimina el padding por defecto del cuerpo de la página */
+}
+
+/* Estilo para el contenedor padre */
+.header {
+  display: flex; /* Aplica Flexbox para organizar el contenido dentro del header */
+  justify-content: space-between;/* Distribuye los elementos con espacio entre ellos */
+  align-items: center;/* Centra los elementos verticalmente dentro del contenedor */
+  height: 40vh;/* Define la altura del header como el 40% de la altura del viewport */
+  padding: 20px;/* Aplica un padding interno de 20px */
+  background-image: url(../image/leticia-854719.jpg);/* Establece una imagen de fondo */
+  background-size: cover;/* La imagen de fondo cubre todo el espacio del header */
+  background-position: center;/* Centra la imagen de fondo */
+  background-repeat: no-repeat;/* Evita que la imagen de fondo se repita */
+  color: white;/* Establece el color del texto en blanco */
+  text-align: center; /* Alinea el contenido textualmente al centro */
+}
+
+/* Estilo del texto dentro del encabezado */
+.encabezado {
+  font-family: 'Playfair Display', serif; /* Aplica la fuente 'Playfair Display' */
+  font-size: 40px; /* Tamaño del texto de 40px */
+  color: rgb(255, 255, 255); /* Color blanco en formato RGB */
+  margin-left: 30px; /* Desplaza el texto 30px hacia la derecha */
+  margin-top: -60%; /* Mueve el texto hacia arriba un 60% de su altura */
+}
+
+.colom {
+  color: rgb(255, 255, 255); /* Establece el color del texto en blanco */
+  font-family: 'Roboto', sans-serif; /* Aplica la fuente 'Roboto' */
+  font-size: 20px; /* Tamaño del texto de 20px */
+  letter-spacing: 10px; /* Añade un espaciado entre letras de 10px */
+  margin-left: -90px; /* Mueve el texto hacia la izquierda 90px */
+  margin-top: -20px; /* Mueve el texto hacia arriba 20px */
+}
+
+/* Estilo para el nav */
+nav {
+  display: flex; /* Usa Flexbox para organizar los enlaces en una fila */
+  justify-content: flex-end; /* Alinea los enlaces al lado derecho */
+  margin-right: 100px; /* Aplica un margen derecho de 100px */
+  margin-top: -70px; /* Mueve el nav hacia arriba 70px */
+  font-size: 18px; /* Establece el tamaño de la fuente en 18px */
+  margin-top: -20%; /* Desplaza el nav hacia arriba un 20% */
+}
+
+nav a {
+  margin-left: 30px; /* Añade un margen entre los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Establece el color del texto en blanco */
+  font-weight: 400; /* Define un grosor normal para el texto */
+  font-family: 'Gill Sans', sans-serif; /* Aplica la fuente 'Gill Sans' */
+  padding: 5px; /* Añade un padding interno de 5px */
+  transition: transform 0.3s ease; /* Añade una animación suave de 0.3s en el hover */
+  border: 2px solid transparent; /* Borde de 2px invisible por defecto */
+  border-radius: 10px; /* Aplica bordes redondeados a los enlaces */
+}
+
+nav a:hover {
+  transform: scale(1.2); /* Aumenta el tamaño de los enlaces al pasar el mouse (hover) */
+}
+
+main{
+  display: flex; /* Usa Flexbox para organizar el contenido principal */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: center; /* Alinea los elementos al centro horizontalmente */
+  justify-content: center; /* Alinea los elementos al centro verticalmente */
+  flex: 1; /* Permite que el main ocupe el espacio restante */
+
+}
+
+/* Estilo del section para que quede en un cuadro con sombra */
+section {
+  background-color: white; /* Establece un fondo blanco */
+  margin: 5% auto; /* Centra el section y aplica un margen superior e inferior del 5% */
+  padding: 30px; /* Añade un padding interno de 30px */
+  width: 70%; /* Ajusta el ancho del section al 70% del contenedor */
+  border-radius: 0; /* No aplica bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra suave */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-top: -1%; /* Desplaza el section hacia arriba ligeramente */
+}
+
+/* Estilo para el título del section */
+section h2 {
+  font-family: 'Playfair Display', serif; /* Aplica la fuente 'Playfair Display' */
+  font-size: 3em; /* Tamaño del texto de 3em (grande) */
+  color: rgb(34, 34, 34); /* Establece un color oscuro para el texto */
+  margin-bottom: 20px; /* Añade un margen inferior de 20px al título */
+  text-align: center; /* Centra el título */
+}
+
+/* Estilo para los párrafos del section */
+section p {
+  margin-left: 20px; /* Aplica un margen izquierdo de 20px */
+  margin-right: 20px; /* Aplica un margen derecho de 20px */
+  display: flex; /* Flexbox para organizar el texto */
+  justify-content: center; /* Centra el contenido textualmente */
+  font-family: 'Roboto', sans-serif; /* Aplica la fuente 'Roboto' */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente mayor a lo normal */
+  line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
+  color: rgb(50, 50, 50); /* Color gris oscuro para el texto */
+  margin-top: 10px; /* Añade un margen superior de 10px */
+  margin-bottom: 10px; /* Añade un margen inferior de 10px */
+  text-align: justify; /* Justifica el texto (alineado a ambos lados) */
+}
+
+.gallery {
+  display: flex; /* Usar flexbox para alinear elementos en una fila */
+  flex-wrap: nowrap; /* No permitir que los elementos se envuelvan */
+  overflow-x: auto; /* Permitir desplazamiento horizontal si hay demasiadas imágenes */
+  padding: 15px 0; /* Espacio superior e inferior */
+  margin: 0; /* Sin márgenes externos */
+}
+
+.item {
+  display: flex; /* Alineación horizontal dentro de cada item */
+  align-items: center; /* Centrado vertical */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Espacio entre los elementos */
+  flex-shrink: 0; /* Evitar que los elementos se reduzcan */
+  width: 30%;
+}
+
+.item img {
+  width: 200px; /* Tamaño de la imagen */
+  height: 150px; /* Ajuste según lo necesario */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.item h3, .item p {
+  margin: 0; /* Elimina márgenes externos para el título y párrafo */
+}
+
+.item h3 {
+  font-size: 1.5em; /* Tamaño de fuente grande para el título del item */
+  color: #333; /* Color gris oscuro para el título */
+  margin-bottom: 10px; /* Espacio inferior entre el título y el contenido */
+}
+
+.item p {
+  font-size: 0.9em; /* Fuente pequeña para el contenido del item */
+  color: #666; /* Color gris para el texto */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+body {
+  min-height: 100dvh; /* Define la altura mínima como el 100% de la ventana */
+  display: grid; /* Usa un layout de grid para organizar el contenido */
+  grid-template-areas: 
+      "top" /* Encabezado */
+      "main" /* Contenido principal */
+      "bottom"; /* Pie de página */
+  grid-template-rows: auto 1fr auto; /* Define el tamaño de las filas */
+  grid-template-columns: 1fr; /* Una columna */
+  ;
+  grid-template-rows: auto 1fr auto; /* Define el tamaño de las filas */
+  grid-template-columns: 1fr; /* Una columna */
+}
+
+header { grid-area: top; /* Define el header en la parte superior del grid */ 
+}
+main { grid-area: main; /* Define el main en el área principal del grid */ 
+}
+footer { grid-area: bottom; /* Define el footer en la parte inferior del grid */ 
+}
+footer {
+  text-align: center; /* Centra el contenido del pie de página */
+  background-color: #112918; /* Fondo oscuro para el footer */
+  color: white; /* Color de texto blanco */
+  padding: 10px; /* Padding interno de 10px */
+  position: relative; /* Permite ajustes de posición relativos al contenedor */
+  bottom: 0; /* Alinea el footer al fondo de la página */
+  font-family: Arial, Helvetica, sans-serif;
+}
